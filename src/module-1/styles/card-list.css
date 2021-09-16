@@ -1,0 +1,11 @@
+.product-list {
+  max-width: 1256px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  flex: 0 0 400px;
+  margin-bottom: 28px;
+}
