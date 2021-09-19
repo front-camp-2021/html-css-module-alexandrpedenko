@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 
-.product {
+.product-wrapper {
   flex: 0 0 400px;
   margin-bottom: 28px;
 }
