@@ -1,1 +1,19 @@
+@use './config/main';
 
+@use './components/buttons';
+
+@use './layout/category';
+
+@use './components/header';
+
+@use './components/pagination';
+
+@use './components/breadcrumbs';
+
+@use './components/filter';
+
+@use './components/search';
+
+@use './components/card';
+
+@use './components/card-list';

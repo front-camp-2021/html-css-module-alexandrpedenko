@@ -1,0 +1,20 @@
+@use "../config/vars" as *;
+@use "../config/mixins" as *;
+
+.header {
+  padding: 30px 0;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    &-img {
+      margin-right: 22px;
+    }
+
+    &-text {
+      @include text-format(normal, 600, 48px, 27px);
+      color: $primary_text;
+    }
+  }
+}

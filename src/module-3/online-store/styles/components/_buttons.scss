@@ -1,0 +1,53 @@
+@use "../config/vars" as *;
+@use "../config/mixins" as *;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+
+  &_medium {
+    height: 45px;
+    @include text-format(normal, 600, 14px, 18px);
+  }
+
+  &_icon {
+    width: 46px;
+    height: 40px;
+    box-shadow: $box_shadow;
+    border-radius: $border_radius;
+  }
+
+  &_primary {
+    color: #ffffff;
+    background-color: $primary;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background-color: $primary_text;
+    }
+  }
+
+  &_white {
+    color: $text_color;
+    background-color: #ffffff;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background-color: darken($secondary, 10%);
+    }
+  }
+
+  &_secondary {
+    color: $text_color;
+    background-color: $secondary;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background-color: darken($secondary, 10%);
+    }
+  }
+}
