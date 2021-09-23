@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 30px;
+  color: #2c2c2c;
+  background-color: #f9f9f9;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.button_primary {
+  color: #fff;
+  background-color: #6f64f8;
+  transition: background 0.2s ease;
+}
+
+.button_primary:hover {
+  background: #5a41e6;
+}
+
+.button_secondary {
+  color: #2c2c2c;
+  background: #ededed;
+  transition: background 0.2s ease;
+}
+
+.button_secondary:hover {
+  background: #dbdbdb;
+}

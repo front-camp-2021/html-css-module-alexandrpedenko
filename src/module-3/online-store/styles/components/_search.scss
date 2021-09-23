@@ -1,0 +1,51 @@
+@use '../config/vars' as *;
+@use '../config/mixins' as *;
+
+.search {
+  &__results {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    &-text {
+      @include text-format(normal, normal, 18px, 21px);
+    }
+  }
+
+  &__form {
+    position: relative;
+
+    &-input {
+      display: block;
+      width: 100%;
+      height: 62px;
+      padding-left: 32px;
+      padding-right: 58px;
+      @include text-format(normal, 300, 22px, 26px);
+      border: none;
+      background: #ffffff;
+      box-shadow: $box_shadow;
+      border-radius: $border_radius;
+      outline: 0;
+    }
+
+    &-input::placeholder {
+      font-family: $main_font;
+      @include text-format(normal, 300, 22px, 26px);
+      color: #999999;
+    }
+  }
+
+  &__form-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    padding: 0 25px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

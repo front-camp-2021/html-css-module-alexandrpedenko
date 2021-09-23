@@ -1,0 +1,36 @@
+.category {
+  width: 100%;
+  margin-top: 44px;
+}
+
+.category__row {
+  display: flex;
+  margin: 0 -15px;
+}
+
+.filter,
+.category__products {
+  padding: 0 15px;
+}
+
+.filter {
+  flex: 0 0 30%;
+  max-width: 560px;
+}
+
+/* Media Query */
+@media screen and (max-width: 1200px) {
+  .category__row {
+    flex-direction: column;
+  }
+
+  .filter {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .filter__body,
+  .filter__clearButton {
+    display: none;
+  }
+}
