@@ -26,22 +26,22 @@ body {
   cursor: pointer;
 }
 
-.button__primary {
+.button_primary {
   color: #fff;
   background-color: #6f64f8;
   transition: background 0.2s ease;
 }
 
-.button__primary:hover {
+.button_primary:hover {
   background: #5a41e6;
 }
 
-.button__secondary {
+.button_secondary {
   color: #2c2c2c;
   background: #ededed;
   transition: background 0.2s ease;
 }
 
-.button__secondary:hover {
+.button_secondary:hover {
   background: #dbdbdb;
 }
